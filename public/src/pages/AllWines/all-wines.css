@@ -1,0 +1,105 @@
+.all-wines-wrap {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.wines-list-label {
+    margin: 20px 0px 40px;
+    padding-left: 10px;
+}
+
+.all-wines-section {
+    display: grid;
+    max-width: 1328px;
+    padding-inline: 5px;
+    grid-template-columns: repeat(auto-fill, 322px);
+    grid-template-rows: repeat(1, 340px);
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.wine-wrap {
+    position: relative;
+}
+
+.wine-name {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 17px;
+    color: transparent;
+    transition: color .3s;
+}
+
+.wine-wrap:hover .wine-name {
+    color: white;
+}
+
+.wine-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.pag-wrap {
+    padding-bottom: 10px;
+}
+
+.wines-pagination {
+    display: flex;
+    max-width: max-content;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-inline: auto;
+    gap: 10px;
+    background-color: cadetblue;
+}
+
+.pagination-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-inline: 5px;
+    gap: 3px;
+}
+
+.page-number {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+}
+
+.border-active {
+    border-color: black;
+}
+
+.page-number:hover {
+    background-color: #000000a8;
+}
+
+.previous-btn, .next-btn {
+    width: 65px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color .3s;
+}
+
+.previous-btn:hover, .next-btn:hover {
+    background-color: rgb(17, 17, 17);
+    color: white;
+}

@@ -1,0 +1,49 @@
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.close-area {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0 0 0 / 77%);
+    z-index: 2;
+}
+
+.notifications-modal {
+    max-width: 800px;
+    height: 520px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 10px;
+}
+
+.notifications-info-wrap {
+    align-items: center;
+}
+
+.notifications-info-wrap {
+    display: flex;
+    position: relative;
+    height: 500px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 4px white;
+    border-radius: 8px;
+    overflow-y: scroll;
+    gap: 20px;
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+.slider {
+    height: 514px;
+    border-radius: 8px;
+}
+
+.slider-img {
+    height: 514px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.slide-wrap {
+    position: relative;
+}
+
+.slide-wrap h1 {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    color: white;
+}
+
+@media (max-width: 570px) {
+    .slide-wrap h1 {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 1300px) {
+    .slider, .slider-img {
+        height: 400px;
+    }
+}

@@ -1,0 +1,92 @@
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 2;
+}
+
+.modal-wrap.active {
+    display: flex;
+}
+
+.close-area {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0 0 0 / 77%);
+    z-index: 2;
+}
+
+.liked-modal {
+    display: flex;
+    max-width: 800px;
+    height: 520px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 10px;
+}
+
+.liked-info-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 4px white;
+    border-radius: 8px;
+    overflow-y: scroll;
+    gap: 20px;
+    width: 100%;
+}
+
+.liked-info-item {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    border: 1px solid grey;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.liked-info-item img {
+    width: 200px;
+    height: 200px;
+}
+
+.liked-info-description-cost {
+    text-align: center;
+    width: calc(100% - 210px);
+}
+
+.delete-liked-item {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+}
+
+.delete-liked-item:hover {
+    background-color: lightgray;
+}

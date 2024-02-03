@@ -1,0 +1,16 @@
+.notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    border: none;
+}
+
+.notifications:hover {
+    background-color: lightgray;
+}

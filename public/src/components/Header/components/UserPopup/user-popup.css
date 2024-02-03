@@ -1,0 +1,66 @@
+.user-btn-wrap {
+    position: relative;
+}
+
+.user-btn-wrap .back {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.user-btn {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.user-btn:hover {
+    background-color: lightgray;
+}
+
+.user-btn-wrap .user-popup-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.503);
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid grey;
+    gap: 5px;
+    top: 55px;
+    right: 10px;
+    z-index: 11;
+}
+
+.user-page-link, .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgb(180, 125, 23);
+    border: none;
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.user-link-hide {
+    display: none;
+}
+
+.user-page-link:hover, .login-btn:hover {
+    background-color: rgb(208, 145, 28);
+}
