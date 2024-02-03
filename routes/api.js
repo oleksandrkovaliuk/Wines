@@ -2,13 +2,13 @@ require("dotenv").config();
 
 const router = require("express").Router();
 
-// const resetDatabaseByDefaultFn = require('../utils/resetDatabaseByDefaultFn'); import of 'set default DB data function'
-// resetDatabaseByDefaultFn(); Set default DB
+// const resetDatabaseByDefaultFn = require("../utils/resetDatabaseByDefaultFn");
+// resetDatabaseByDefaultFn();
 
-const checkAuthorization = require('../routesFunctions/checkAuthorization');
-const sendFeedBack = require('../routesFunctions/sendFeedBack');
-const login = require('../routesFunctions/login');
-const updateUsersInfo = require('../routesFunctions/updateUsersInfo');
+const checkAuthorization = require("../routesFunctions/checkAuthorization");
+const sendFeedBack = require("../routesFunctions/sendFeedBack");
+const login = require("../routesFunctions/login");
+const updateUsersInfo = require("../routesFunctions/updateUsersInfo");
 const updatePassword = require("../routesFunctions/updatePassword");
 const adminAuthorization = require("../routesFunctions/adminAuthorization");
 const logout = require("../routesFunctions/logout");
@@ -45,7 +45,6 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
-
 
 router.route("/checkAuthorization").post(checkAuthorization);
 router.route("/feedback").post(sendFeedBack);

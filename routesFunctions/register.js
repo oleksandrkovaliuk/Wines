@@ -19,7 +19,7 @@ const register = async (req, res) => {
         const IP =
             req?.ip !== "::1" ||
             networkInterfaces.wlp3s0?.[1]["address"] ||
-            networkInterfaces?.en0[0]?.address ||
+            networkInterfaces?.enp4s0[0]?.address ||
             "";
         await db.collection("users").doc(email).set(userData);
         await db.collection("IPs").doc(email).set({ ip_1: IP });
